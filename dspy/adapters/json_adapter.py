@@ -160,7 +160,7 @@ class JSONAdapter(ChatAdapter):
                 adapter_name="JSONAdapter",
                 signature=signature,
                 lm_response=completion,
-                message="LM response cannot be serialized to a JSON object.",
+                message="LM response cannot be parsed as a JSON object.",
             )
 
         fields = {k: v for k, v in fields.items() if k in signature.output_fields}
